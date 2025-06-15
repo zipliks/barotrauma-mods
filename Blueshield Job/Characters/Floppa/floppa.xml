@@ -1,0 +1,45 @@
+﻿<Character visiblity="100" SpeciesName="Floppa" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="cute" Humanoid="False" HasInfo="False" CanInteract="True" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="5" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="True" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="30" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
+  <ragdolls folder="%ModDir%/Characters/Floppa/Ragdolls/" />
+  <animations folder="%ModDir%/Characters/Floppa/Animations/" />
+  <damageemitter particle="gib" drawontop="True" particleamount="10" velocitymin="50" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.25" scalemax="0.5" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="blood" particleamount="10" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="waterblood" particleamount="1" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="gib" particleamount="20" velocitymin="200" velocitymax="700" anglemin="0" anglemax="360" scalemin="1" scalemax="1" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <health Vitality="600" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="1" BurnReduction="-0.8" ConstantHealthRegeneration="30" HealthRegenerationWhenEating="40" StunImmunity="True" PoisonImmunity="True" PoisonVulnerability="3" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="True" Immunities="">
+    <Limb name="Torso" />
+  </health>
+  <Inventory Slots="Any, Any" AccessibleWhenAlive="True" Commonness="1" />
+  <ai combatstrength="10" sight="1" hearing="1" fleehealththreshold="0" aggressiveboarding="False" aggressiongreed="10" aggressionhurt="200" attackwhenprovoked="False" avoidgunfire="True" enforceaggressivebehaviorformissions="False" targetouterwalls="False" randomattack="False" avoidtime="3" minfleetime="20">
+    <target tag="owner" state="Protect" threshold="3" priority="100" reactdistance="200" attackdistance="0" timer="0" />
+    <target tag="stronger" state="Avoid" priority="50" reactdistance="1000" attackdistance="0" timer="0" />
+    <target tag="dead" state="Eat" priority="100" reactdistance="0" />
+    <target tag="weaker" state="Avoid" priority="50" reactdistance="1000" attackdistance="0" timer="0" />
+    <target tag="human" state="Follow" priority="10" reactdistance="200" attackdistance="0" timer="0" />
+    <petbehavior maxhappiness="100" unhappythreshold="50" happythreshold="80" happinessdecreaserate="0.035" hungerincreaserate="0.03" playforce="6.0">
+      <eat tag="petfood3" ignorecontained="true" requiredhunger="30-100" hunger="-50" happiness="5" priority="100" />
+      <eat tag="dead" requiredhunger="70-100" hunger="-100" happiness="10" priority="100" />
+      <itemproduction rate="0.0" invhungerrate="0.002" requiredhunger="0-30">
+        <item identifier="poop" commonness="100" />
+      </itemproduction>
+    </petbehavior>
+  </ai>
+  <StatusEffect type="OnDeath" target="This">
+    <Sound file="%ModDir%/Sounds/floppaportal.ogg" type="OnUse" range="10000" />
+    <RemoveCharacter />
+  </StatusEffect>
+  <StatusEffect type="Always" interval="5" target="NearbyCharacters" range="1000">
+    <Affliction identifier="floppabuff" amount="100"/>
+  </StatusEffect>
+  <sound File="%ModDir%/Characters/Floppa/floppa_idle1.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Floppa/floppa_idle2.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Floppa/floppa_idle2.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Floppa/floppa_takeDamage.ogg" State="Damage" Range="1000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Floppa/floppa_positive1.ogg" State="Happy" Range="1000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Floppa/floppa_positive2.ogg" State="Happy" Range="1000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Floppa/floppa_positive3.ogg" State="Happy" Range="1000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Floppa/floppa_positive4.ogg" State="Happy" Range="1000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Floppa/floppa_positive5.ogg" State="Happy" Range="1000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Floppa/floppa_positive6.ogg" State="Happy" Range="1000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Floppa/floppa_positive7.ogg" State="Happy" Range="1000" Volume="0.5" Tags="" />
+  <sound File="%ModDir%/Characters/Floppa/floppa_negative.ogg" State="Unhappy" Range="1000" Volume="1" Tags="" />
+</Character>

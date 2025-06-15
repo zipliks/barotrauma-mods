@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TalentTrees>
+  <TalentTree jobidentifier="blueshield">
+    <SubTree identifier="blueshieldprimary" nameidentifier="talenttree.primary" type="primary">
+      <TalentOptions requiredtalents="2" maxchosentalents="6">
+        <TalentOption identifier="glorytocoalition" />
+        <TalentOption identifier="stateyourlaws" />
+        <TalentOption identifier="totalsurveillance" />
+        <TalentOption identifier="dontdaredying" />
+        <TalentOption identifier="medicaltools" />
+        <TalentOption identifier="testinggrounds" />
+      </TalentOptions>
+    </SubTree>
+    <SubTree identifier="onemanapocalypse" type="specialization" requires="blueshieldprimary" blocks="yourshield,accordingtoplan">
+      <TalentOptions>
+        <TalentOption identifier="learningtoswitchhands" />
+        <TalentOption identifier="breathingtube" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="bsselfcare" />
+        <TalentOption identifier="officerdrunkshield" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="adrenalinepump" />
+        <TalentOption identifier="sleepcarp" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="laststand" />
+        <TalentOption identifier="powbzzt" />
+      </TalentOptions>
+    </SubTree>
+    <SubTree identifier="yourshield" type="specialization" requires="blueshieldprimary" blocks="accordingtoplan,onemanapocalypse">
+      <TalentOptions>
+        <TalentOption identifier="mindblock" />
+        <TalentOption identifier="whysodark" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="trackerson" />
+        <TalentOption identifier="captainyouthere" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="warcrimes" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="calltheshuttle" />
+      </TalentOptions>
+    </SubTree>
+    <SubTree identifier="accordingtoplan" type="specialization" requires="blueshieldprimary" blocks="onemanapocalypse,yourshield">
+      <TalentOptions>
+        <TalentOption identifier="codegreen" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="codeblue" />
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="codered" />
+      </TalentOptions>
+      <!-- 
+      <TalentOptions>
+        <TalentOption identifier="codegamma" />
+        <TalentOption identifier="codedelta" />
+      </TalentOptions>
+      -->
+    </SubTree>
+  </TalentTree>
+</TalentTrees>
