@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Russian" nowhitespace="false" translatedname="Russian">
+ 
+  <jobname.blueshield>Офицер 'Синий Щит'</jobname.blueshield>
+  <jobdescription.blueshield>Посвятивший себя защите капитанов и экипажей судов от опасностей своей непоколебимой решимостью и опытом телохранитель. Надёжный защитник безопасности в суровых водах Европы.</jobdescription.blueshield>
+ 
+  <gygax.flashbang>Ударная волна</gygax.flashbang>
+  <gygax.overload>Перекл. перегрузку</gygax.overload>
+  <gygax.taser>Усмиритель</gygax.taser>
+  <gygax.disabler>CH-PD 'Оглушитель'</gygax.disabler>
+  <gygax.lethal>CH-PS 'Огненный дротик'</gygax.lethal>
+  <gygax.rescuehook>Спасательный крюк</gygax.rescuehook>
+
+
+  <!-- Items -->
+
+  <entityname.acidimplantdetonation>acid implant detonation</entityname.acidimplantdetonation>
+
+  <entityname.blueshieldoutfit>Униформа офицера 'Синий щит'</entityname.blueshieldoutfit>
+  <entityname.blueshieldoutfit>Удобная синяя униформа, используемая высокоранговыми профессиональными телохранителями</entityname.blueshieldoutfit>
+
+  <entityname.bsstunbaton>Надёжная оглушающая дубинка</entityname.bsstunbaton>
+  <entitydescription.bsstunbaton>Надёжное оружие надёжного офицера</entitydescription.bsstunbaton>
+
+  <entityname.europanlaw>Кодекс Европы</entityname.europanlaw>
+  <entitydescription.europanlaw>Книга, заполненная таинственными символами. Тяжелее, чем выглядит.</entitydescription.europanlaw>
+
+  <entityname.dogmask>Маска собаки</entityname.dogmask>
+  <entitydescription.dogmask>Лучше не надо, правда</entitydescription.dogmask>
+
+  <entityname.crewtracker>Трекер экипажа</entityname.crewtracker>
+  <entitydescription.crewtracker>Отображает имя, местонахождение, здоровье и примерное направление до каждого члена экипажа</entitydescription.crewtracker>
+
+  <entityname.bsimplanter>Имплантер</entityname.bsimplanter>
+  <entitydescription.bsimplanter>Специальный инъектор, предназначенный для внедрения некоторых имплантов</entitydescription.bsimplanter>
+
+  <entityname.implantdeathalarm>Имплант оповещения о смерти</entityname.implantdeathalarm>
+  <entitydescription.implantdeathalarm>Когда член экипажа с таким имплантом умирает или падает в критическое состояние, весь остальной экипаж получает оповещение об этом, содержащее текущие координаты и название отсека</entitydescription.implantdeathalarm>
+
+  <entityname.implantchemical>Химический имплант</entityname.implantchemical>
+  <entitydescription.implantchemical>При смерти носителя, взрывается облаком капель кислоты, нанося урон всему вокруг. Все умирают, так что уйдите красиво.</entitydescription.implantchemical>
+
+  <entityname.rescuehook>Спасательный крюк</entityname.rescuehook>
+  <entitydescription.rescuehook>Запускает безобидный крюк-липочку, цепляющуюся к поверхности при контакте и затем быстро втягивающуюся обратно в инструмент, позволяя носителю вытаскивать союзников из опасности с относительной простотой. Не требует боеприпасы</entitydescription.rescuehook>
+
+  <entityname.sleepgrenade>Усыпляющая граната</entityname.sleepgrenade>
+  <entitydescription.sleepgrenade>Медленно выпускает усыпляющий газ в воздух, замедляя и затем усыпляя всех, оказавшихся в области - и людей, и местную фауну. Ломается в воде, и каким-то образом усыпляет тех, кто в скафандре</entitydescription.sleepgrenade>
+
+  <entityname.boilinggrenade>Кипятящая граната</entityname.boilinggrenade>
+  <entitydescription.boilinggrenade>Будучи брошенной в воду, нагревает область вокруг себя с такой силой, что течение втягивает всё вокруг к центру. Не может быть потушена вручную, но выключается сама когда не находится в воде. Но даже тогда, она слишком горячая для взятия в руки даже в скафандре</entitydescription.boilinggrenade>
+
+  <entityname.violentgrenade>Светосиловая граната</entityname.violentgrenade>
+  <entitydescription.violentgrenade>При контакте со стеной или существом, взрывается с огромной силой, яркостью и громкостью, но не наносит травм или повреждений корпусу</entitydescription.violentgrenade>
+
+
+  <entityname.breathingtube>Дыхательная трубка</entityname.breathingtube>
+  <entitydescription.breathingtube>Будучи имплантированной, предотвращает удушение носителя если тот потерял сознание от низкого уровня здоровья, если он в противном случае мог бы дышать</entitydescription.breathingtube>
+
+  <entityname.sighingtube>Вздыхательная трубка</entityname.sighingtube>
+  <entitydescription.sighingtube>Именно это и делает</entitydescription.sighingtube>
+
+  <entityname.lsd>ЛСД</entityname.lsd>
+  <entitydescription.lsd>Уооооо ебать штырит</entitydescription.lsd>
+
+  <entityname.unica>Mateba Model 6 Unica</entityname.unica>
+  <entitydescription.unica>6-зарядный скорострельный револьвер для тех случаев, когда вам нужна настоящая МОЩЬ. Боеприпасы не могут быть созданы, вам стоит проведать местный магазин или обломки. Создаётся пустым</entitydescription.unica>
+
+  <entityname.unicaround>Пуля для Unica</entityname.unicaround>
+  <entitydescription.unicaround>Особая пуля для особого огнестрела. Могут быть найдены только в обломках и прочих заброшенных контейнерах, либо куплены на аванпосте</entitydescription.unicaround>
+
+  <entityname.multirevolver>Мультирежимный энергетический револьвер</entityname.multirevolver>
+  <multirevolver.ButtonLabelTaserMode>ШОКЕР</multirevolver.ButtonLabelTaserMode>
+  <multirevolver.ButtonLabelDisablerMode>НЕЙТРАЛИЗАТОР</multirevolver.ButtonLabelDisablerMode>
+  <multirevolver.ButtonLabelLethalMode>ЛЕТАЛЬНЫЙ</multirevolver.ButtonLabelLethalMode>
+
+
+  <entityname.implantmindshield>Имплант защиты разума</entityname.implantmindshield>
+  <entitydescription.implantmindshield>При внедрении, имплант самостоятельно достигает мозга и блокироует некоторые нейроны для предотвращения каких-либо внешних изменений. По какой-то причине, он ещё и повышает верность...</entitydescription.implantmindshield>
+
+  <entityname.implantweldingshield>Сварочный имплант</entityname.implantweldingshield>
+  <entitydescription.implantweldingshield>Особые глазные прозрачные щиты, предотвращающие урон по глазам, вызванный ярким светом</entitydescription.implantweldingshield>
+
+  <entityname.mufflerheadset>Шумоподавляющие наушники</entityname.mufflerheadset>
+  <entitydescription.mufflerheadset>Военные наушники с активным шумоподавлением</entitydescription.mufflerheadset>
+
+  <entityname.floppaportal>Межпространственный приёмник</entityname.floppaportal>
+  <entitydescription.floppaportal>Может передумаете?</entitydescription.floppaportal>
+
+  
+
+  <entityname.commsterminal>Терминал связи</entityname.commsterminal>
+  <entitydescription.commsterminal>Прикрепите к стене, затем внесите ключ аутентификации. Дальность не ограничена, работает на внутренней батарее. Бесполезен без офицера 'Синий щит'</entitydescription.commsterminal>
+
+  <entityname.greenauthkey>Зелёный ключ аутентификации</entityname.greenauthkey>
+  <entitydescription.greenauthkey>Зелёная пластиковая карта. При внесении в терминал связи, увеличивает скорость двигателей и насосов, а также скорость работы фабрикаторов и деконструкторов</entitydescription.greenauthkey>
+
+  <entityname.blueauthkey>Синий ключ аутентификации</entityname.blueauthkey>
+  <entitydescription.blueauthkey>Синяя пластиковая карта. При внесении в терминал связи, ускоряет скорость починки и передвижения всего экипажа</entitydescription.blueauthkey>
+
+  <entityname.redauthkey>Красный ключ аутентификации</entityname.redauthkey>
+  <entitydescription.redauthkey>Красная пластиковая карта. При внесении в терминал связи, увеличивает наносимый экипажем урон и уменьшает получаемый урон. Также позволяет использовать вооружение Гигакса и летальный режим мультирежимного револьвера</entitydescription.redauthkey>
+
+  <entityname.gygax>'Гигакс'</entityname.gygax>
+  <entitydescription.gygax>Мощный военный экзокостюм, способный выдержать значительную внешнюю нагрузку, а также перемещаться со значительной скоростью. Сложно создать, а также не может стрелять в любой код, кроме красного</entitydescription.gygax>
+
+  <!-- Talent Trees -->
+
+  <talenttree.onemanapocalypse>Человек-апокалипсис</talenttree.onemanapocalypse>
+  <talenttree.yourshield>Ваш щит</talenttree.yourshield>
+  <talenttree.accordingtoplan>В соответствии с планом</talenttree.accordingtoplan>
+
+  <!-- Talents -->
+
+  <talentname.glorytocoalition>Слава Коалиции</talentname.glorytocoalition>
+  <talentdescription.glorytocoalition>Получите одноразовую прибавку в виде [xpamount] опыта, а также [bonus] [skillmedical], [skillhelm] и [skillweapons] навыков после использования в общей сумме [requirement] медицинских предметов на союзников</talentdescription.glorytocoalition>
+  <talentdescription.glorytocoalition2>Торговцы Коалиции делают скидку в [amount]%</talentdescription.glorytocoalition2>
+
+  <talentname.stateyourlaws>Назови законы</talentname.stateyourlaws>
+  <talentdescription.stateyourlawsextrared>Наносит непоправимый ущерб социальному статусу</talentdescription.stateyourlawsextrared>
+  <talentdescription.stateyourlawsextra>[text]</talentdescription.stateyourlawsextra>
+
+  <talentname.totalsurveillance>Тотальная слежка</talentname.totalsurveillance>
+  <talentdescription.totalsurveillance>Отслеживайте ваших союзников с помощью специального планшета</talentdescription.totalsurveillance>
+
+  <talentname.dontdaredying>Только вздумай умереть</talentname.dontdaredying>
+  <talentdescription.dontdaredying>Когда член экипажа с имплантом оповещения о смерти умирает или входит в критическое состояние, все члены экипажа получают оповещение, включающее в себя его координаты и название отсека</talentdescription.dontdaredying>
+  <talentdescription.dontdaredying2>Когда член экипажа с химическим имплантом умирает, он взрывается облаком капель кислоты</talentdescription.dontdaredying2>
+
+  <talentname.medicaltools>Медицинские инструменты</talentname.medicaltools>
+  <talentdescription.medicaltools>Применяемый вами СЛР на [amount]% сильнее</talentdescription.medicaltools>
+
+  <talentname.testinggrounds>Полигон</talentname.testinggrounds>
+
+  <talentname.learningtoswitchhands>Как менять руки?</talentname.learningtoswitchhands>
+  <talentdescription.learningtoswitchhandsrevolver>В течении [seconds] секунд после атаки пистолетом или револьвером, ваша следующая атака оглушающим оружием наносит на [damage]% больше урона</talentdescription.learningtoswitchhandsrevolver>
+  <talentdescription.learningtoswitchhandsstun>В течении [seconds] секунд после атаки оглушающим оружием, ваша следующая атака пистолетом или револьвером наносит на [damage]% больше урона</talentdescription.learningtoswitchhandsstun>
+
+  <talentname.breathingtube>Дыхательная трубка, вздыхательная трубка..</talentname.breathingtube>
+  <talentdescription.breathingtube>Использование импланта дыхательной трубки позволяет носителю дышать когда он находится в критическом состоянии, но только если он не в воде и вокруг есть воздух</talentdescription.breathingtube>
+
+  <talentname.bsselfcare>Самолечение</talentname.bsselfcare>
+  <talentdescription.bsselfcare>Медицинские препараты, применяемые на вас, на [amount]% эффективнее</talentdescription.bsselfcare>
+
+  <talentname.officerdrunkshield>Офицер 'Пьяный щит'</talentname.officerdrunkshield>
+  <talentdescription.officerdrunkshield>Будучи пьяным, вы получаете на [amount]% меньше урона</talentdescription.officerdrunkshield>
+
+  <talentname.adrenalinepump>Адреналиновая помпа</talentname.adrenalinepump>
+  <talentdescription.adrenalinepump>Когда ваше здоровье падает ниже 0, вы остаётесь в сознании ещё на [time] секунд, но замедляетесь на [slowdown]%</talentdescription.adrenalinepump>
+
+  <talentname.sleepcarp>Путь Спящего Карпа</talentname.sleepcarp>
+  <talentdescription.sleepcarp>Когда ваше здоровье ниже 0 health, вы получаете на [amount]% меньше урона</talentdescription.sleepcarp>
+
+  <talentname.laststand>Последняя битва</talentname.laststand>
+  <talentdescription.laststand>Вы наносите на [amount]% больше урона за каждого врага рядом, если вы одни. Максимум [maxamount]%</talentdescription.laststand>
+  <talentdescription.unicared>Боеприпасы для Unica не могут быть созданы - только найдены или куплены</talentdescription.unicared>
+  <talentdescription.unica>[text]</talentdescription.unica>
+
+  <talentname.powbzzt>ПЫЩ БЗЗЗТ</talentname.powbzzt>
+  <talentdescription.powbzzt>Мультиревольвер имеет 3 режима - короткое оглушение, постепенное замедление и летальный. Летальный режим доступен только при активном красном коде. Заряжается в заряжающих батареи устройствах, убедитесь что у вас такие есть.</talentdescription.powbzzt>
+
+  <talentname.mindblock>Блокировка мозгов</talentname.mindblock>
+  <talentdescription.mindblock>Имплант защиты разума делает носителя навсегда устойчивым к психозу, галлюцинациям и схожим эффектам</talentdescription.mindblock>
+
+  <talentname.whysodark>Кто выключил свет?</talentname.whysodark>
+  <talentdescription.whysodark>Наушники с шумоподавлением защищают от звуков, а имплант сварочных щитов защищает от слепоты - двух эффектов светошумовых и светосиловых гранат</talentdescription.whysodark>
+
+  <talentname.trackerson>Включите датчики!</talentname.trackerson>
+  <talentdescription.trackerson>Каждый член экипажа с имплантом оповещения о смерти увеличивает вашу скорость на [speed]%, а здоровье - на [vitality]%. Каждый член экипажа без импланта оповещения о смерти даёт вам психоз</talentdescription.trackerson>
+
+  <talentname.captainyouthere>Капитан, вы там?</talentname.captainyouthere>
+  <talentdescription.captainyouthere>Вы двигаетесь на [speed]% быстрее за каждого бессознательного члена экипажа. Вплоть до [speedmax]%.</talentdescription.captainyouthere>
+
+  <talentname.warcrimes>Военные преступления</talentname.warcrimes>
+  <talentdescription.warcrimes>Что за ужасы оно нам принесёт?</talentdescription.warcrimes>
+
+  <talentname.calltheshuttle>Вызывайте шаттл!</talentname.calltheshuttle>
+  <talentdescription.calltheshuttle>Если ни один член экипажа не умер во время миссии, получите [moneybonus] марок и [xpbonus] опыта</talentdescription.calltheshuttle>
+
+
+  <talentdescription.codeextrared>Одновременно может быть активен только один код!</talentdescription.codeextrared>
+  <talentdescription.codeextra>[text]</talentdescription.codeextra>
+
+  <talentname.codegreen>Зелёный код</talentname.codegreen>
+  <talentdescription.codegreen>Использование зелёного ключа аутенификации увеличивает силу насосов и двигателя на [pumpenginespeed]%, а также скорость фабрикаторов и деконструкторов на [fabricatorspeed]%</talentdescription.codegreen>
+
+  <talentname.codeblue>Синий код</talentname.codeblue>
+  <talentdescription.codeblue>Использование синего ключа аутентификации увеличивает скорость передвижения экипажа и скорость починки на [amount]%</talentdescription.codeblue>
+
+  <talentname.codered>Красный код</talentname.codered>
+  <talentdescription.codered>Использование красного ключа аутентификации увеличивает урон, наносимый экипажем, и уменьшает урон, получаемый экипажем, на [amount]%</talentdescription.codered>
+
+ <!-- Afflictions -->
+
+  <afflictionname.codegreen>Зелёный код</afflictionname.codegreen>
+  <afflictiondescription.codegreen>Скорость подлодки и сборки/разборки предметов увеличена</afflictiondescription.codegreen>
+
+  <afflictionname.codeblue>Синий код</afflictionname.codeblue>
+  <afflictiondescription.codeblue>Скорость перемещения экипажа и скорость починки увеличена</afflictiondescription.codeblue>
+
+  <afflictionname.codered>Красный код</afflictionname.codered>
+  <afflictiondescription.codered>Увеличен наносимый и уменьшен получаемый урон</afflictiondescription.codered>
+
+  <afflictionname.stunattack>Оглушающая атака</afflictionname.stunattack>
+  <afflictiondescription.stunattack>Вы атаковали оглушающим оружием, теперь стреляйте!</afflictiondescription.stunattack>
+
+  <afflictionname.pistolattack>Выстрел из пистолета</afflictionname.pistolattack>
+  <afflictiondescription.pistolattack>Вы выстрелили из пистолета, теперь оглушите!</afflictiondescription.pistolattack>
+
+  <afflictionname.adrenalinepump>Адреналиновая помпа</afflictionname.adrenalinepump>
+  <afflictiondescription.adrenalinepump>Ваше тело всё ещё движется, хотя не должно</afflictiondescription.adrenalinepump>
+
+  <afflictionname.sleepcarp>Путь Спящего Карпа</afflictionname.sleepcarp>
+  <afflictiondescription.sleepcarp>Вы цепляетесь за свою жизнь, переживая атаки, которые должны были вас убить</afflictiondescription.sleepcarp>
+
+  <afflictionname.captainyouthere>Операция по спасению</afflictionname.captainyouthere>
+  <afflictiondescription.captainyouthere>Ваш напарник в беде, нужно спешить</afflictiondescription.captainyouthere>
+
+  <afflictionname.lsd>ЛСД</afflictionname.lsd>
+  <afflictiondescription.lsd>Уоооооо</afflictiondescription.lsd>
+
+  <afflictionname.sleepgrenade>Усыплён</afflictionname.sleepgrenade>
+  <afflictiondescription.sleepgrenade>Сладких снов</afflictiondescription.sleepgrenade>
+
+  <afflictionname.deathalarm>Оповещение о смерти</afflictionname.deathalarm>
+
+  <afflictionname.mindshield>Твёрд разумом</afflictionname.mindshield>
+
+  <afflictionname.weldingshield>Глаза защищены</afflictionname.weldingshield>
+  
+  <afflictionname.chemicalimplant>Химический имплант</afflictionname.chemicalimplant>
+  
+  <afflictionname.soultaint>Запятнанная душа</afflictionname.soultaint>
+  <afflictiondescription.soultaint>Вас предупреждали</afflictiondescription.soultaint>
+
+  <afflictionname.lawenforcement>Рука закона</afflictionname.lawenforcement>
+  <afflictiondescription.lawenforcement>Законное требование делает вас на 20% более восприимчивыми к урону</afflictiondescription.lawenforcement>
+
+  <afflictionname.breathingtube>Дыхательная трубка</afflictionname.breathingtube>
+
+  <afflictionname.disablerslow>Нет сил</afflictionname.disablerslow>
+  <afflictiondescription.disablerslow>Мышцы онемели и болят одновременно</afflictiondescription.disablerslow>
+
+  <afflictionname.floppabuff>Божественное вмешательство</afflictionname.floppabuff>
+
+  <afflictionname.gygaxoverload>Перегрузка актуаторов</afflictionname.gygaxoverload>
+  <afflictiondescription.gygaxoverload>ГЛОТАЙ ПЫЛЬ!</afflictiondescription.gygaxoverload>
+
+</infotexts>

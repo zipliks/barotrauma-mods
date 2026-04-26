@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Oxygen Reloader" modversion="1.0.0" corepackage="False" steamworkshopid="2958095512" gameversion="1.0.8.0">
+  <Other file="%ModDir%/Lua/ForcedAutorun/main.lua" />
+  <Other file="%ModDir%/Lua/ForcedAutorun/utils.lua" />
+  <Other file="%ModDir%/Lua/config.lua" />
+</contentpackage>

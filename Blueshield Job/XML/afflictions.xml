@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+
+  <Affliction identifier="deathalarm" type="implant" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1" showiconthreshold="100" maxstrength="10"
+    HealableInMedicalClinic="false">
+    <Effect minstrength="1" maxstrength="10">
+      <StatusEffect target="Character">
+        <Conditional Health="lt 0" />
+        <LuaHook name="character.critical" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="0,0,1,1" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="breathingtube" type="implant" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1" showiconthreshold="100" maxstrength="10"
+    HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="10">
+      <StatusEffect target="Character" comparison="and">
+        <Conditional vitality="lt 0" />
+        <Conditional inwater="false" />
+        <Conditional OxygenAvailable="gt 10" />
+        <ReduceAffliction identifier="OxygenLow" amount="5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="0,0,1,1" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="chemicalimplant" type="implant" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1" showiconthreshold="100" maxstrength="10"
+    HealableInMedicalClinic="false">
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="0,0,1,1" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="mindshield" type="implant" limbspecific="false" indicatorlimb="Head" showinhealthscannerthreshold="1" showiconthreshold="100" maxstrength="10" HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="10" resistancefor="psychosis,hallucinating,hallucinating_mindsunraveled,hallucinatingshortduration,lsd,gaze,watchersgaze" minresistance="1" maxresistance="1" />
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="0,0,1,1" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="weldingshield" type="implant" limbspecific="false" indicatorlimb="Head" showinhealthscannerthreshold="1" showiconthreshold="100" maxstrength="10"
+    HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="10" resistancefor="blind,blind_hard" minresistance="1" maxresistance="1" />
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="0,0,1,1" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="codegreen" type="buff" showbarinhealthmenu="false" iconcolors="0,200,50" limbspecific="false" indicatorlimb="Head" showinhealthscannerthreshold="1" showiconthreshold="1"
+    maxstrength="10" HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="10">
+      <StatValue stattype="DeconstructorSpeedMultiplier" value="0.5" />
+      <StatValue stattype="FabricationSpeed" value="0.5" />
+    </Effect>
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="codeblue" type="buff" showbarinhealthmenu="false" iconcolors="0,50,200" limbspecific="false" indicatorlimb="Head" showinhealthscannerthreshold="1" showiconthreshold="1"
+    maxstrength="10"
+    HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="10">
+      <StatValue stattype="MovementSpeed" value="0.3" />
+      <StatValue stattype="RepairSpeed" value="0.3" />
+      <StatValue stattype="RepairToolStructureRepairMultiplier" value="0.3" />
+    </Effect>
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="codered" type="buff" showbarinhealthmenu="false" iconcolors="255,50,0" limbspecific="false" indicatorlimb="Head" showinhealthscannerthreshold="1" showiconthreshold="1"
+    maxstrength="10"
+    HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="10" resistancefor="damage" minresistance="0.3" maxresistance="0.3">
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+    </Effect>
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+<!-- 
+  <Affliction identifier="codegamma" type="buff" showbarinhealthmenu="false" iconcolors="255,150,0" limbspecific="false" indicatorlimb="Head" showinhealthscannerthreshold="1" showiconthreshold="1"
+    maxstrength="10"
+    HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="10" />
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="codedelta" type="buff" showbarinhealthmenu="false" iconcolors="255,50,255" limbspecific="false" indicatorlimb="Head" showinhealthscannerthreshold="1" showiconthreshold="1"
+    maxstrength="10"
+    HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="10" />
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
+  </Affliction>
+-->
+
+  <Affliction identifier="stunattack" type="buff" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="500" showiconthreshold="1" maxstrength="9" HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="9" />
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="256,0,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="pistolattack" type="buff" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="500" showiconthreshold="1" maxstrength="9" HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="9" />
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="384,0,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="adrenalinepump" type="buff" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1"
+    showiconthreshold="1" maxstrength="10" HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="-1">
+      <StatValue stattype="MovementSpeed" value="-0.75" />
+      <AbilityFlag flagtype="AlwaysStayConscious" />
+    </Effect>
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="0,128,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="sleepcarp" type="buff" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="5" showiconthreshold="1" maxstrength="10" showbarinhealthmenu="false"
+    HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="10" strengthchange="-5"/>
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="128,128,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="sleepgrenade" type="stun" affectmachines="false" limbspecific="false" indicatorlimb="Head" showinhealthscannerthreshold="1" showiconthreshold="21" maxstrength="100">
+    <Effect minstrength="0" maxstrength="20"
+      minscreendistort="0.0"
+      maxscreendistort="0.5"
+      minscreenblur="0"
+      maxscreenblur="0.5"
+      minradialdistort="0"
+      maxradialdistort="0.5"
+      minspeedmultiplier="1.0"
+      maxspeedmultiplier="0.5">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="sleepgrenade" amount="1" />
+        <TriggerAnimation Type="Walk" filename="DrunkenWalk" priority="6" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" filename="DrunkenRun" priority="6" ExpectedSpecies="Human" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="21" maxstrength="100"
+      minscreendistort="0.5"
+      maxscreendistort="1"
+      minscreenblur="0.5"
+      maxscreenblur="1"
+      minradialdistort="0.5"
+      maxradialdistort="1"
+      minspeedmultiplier="0.5"
+      maxspeedmultiplier="0.2">
+      <StatusEffect target="Character">
+        <ReduceAffliction identifier="sleepgrenade" amount="3" />
+        <TriggerAnimation Type="Walk" filename="DrunkenWalk" priority="6" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" filename="DrunkenRun" priority="6" ExpectedSpecies="Human" />
+        <Affliction identifier="stun" amount="2" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="0,256,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="trackerson" type="buff" limbspecific="false" indicatorlimb="Head" showinhealthscannerthreshold="500" showiconthreshold="500" maxstrength="15" HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="16"
+      minspeedmultiplier="1" maxspeedmultiplier="1.5" minvitalitydecrease="0" maxvitalitydecrease="0.6" />
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="256,1128,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="captainyouthere" type="buff" limbspecific="false" indicatorlimb="Head" showinhealthscannerthreshold="500" showiconthreshold="1" maxstrength="4"
+    HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="4"
+      minspeedmultiplier="1" maxspeedmultiplier="1.4" />
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="384,128,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="lsd" type="psychosis" limbspecific="false" indicatorlimb="Head" showinhealthscannerthreshold="1" showiconthreshold="1" maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1"
+      minscreendistort="0.0" maxscreendistort="30.0" minscreenblur="0" screeneffectfluctuationfrequency="0.2" maxscreenblur="10.0" minradialdistort="0" maxradialdistort="2" minchromaticaberration="0"
+      maxchromaticaberration="30000" />
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="384,384,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="soultaint" type="debuff" limbspecific="false" iconcolors="255,200,200;255,200,200;255,200,200" indicatorlimb="Torso" showbarinhealthmenu="false"
+    showinhealthscannerthreshold="1" showiconthreshold="100" maxstrength="10"
+    HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="10"
+      minfacetint="255,0,0,200" maxfacetint="255,100,150,200" minbodytint="255,100,150,200" maxbodytint="255,0,0,200" />
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="256,384,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="lawenforcement" type="debuff" limbspecific="false" iconcolors="150,50,50;200,50,50;255,50,50" indicatorlimb="Torso" showinhealthscannerthreshold="1" showiconthreshold="1"
+    maxstrength="30"
+    HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="30" resistancefor="damage" minresistance="-0.3" maxresistance="-0.3" strengthchange="-1" />
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="0,384,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="gygaxoverload" type="buff" limbspecific="false" iconcolors="150,50,0;150,50,50;150,50,0" indicatorlimb="Torso" showinhealthscannerthreshold="100" showiconthreshold="1"
+    maxstrength="60" HealableInMedicalClinic="false" showbarinhealthmenu="false">
+    <Effect minstrength="0" maxstrength="60"
+      minspeedmultiplier="1.5" maxspeedmultiplier="2">
+      <StatusEffect target="Character">
+        <Sound file="%ModDir%/Sounds/sparks.ogg" range="500" disabledeltatime="true" interval="0.2" volume="1" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="1" distancemin="0" distancemax="40" velocitymin="-10" velocitymax="-200" scalemin="0.5"
+          scalemax="1" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="0.25">
+        <ReduceAffliction identifier="gygaxoverload" amount="25" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="128,0,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="floppabuff" type="buff" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1" showiconthreshold="1000" showbarinhealthmenu="false" maxstrength="100"
+    HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1">
+      <StatValue stattype="ExplosionDamageMultiplier" value="0.3" />
+      <StatValue stattype="ExplosionRadiusMultiplier" value="0.2" />
+      <StatValue stattype="TeamAttackMultiplier" value="-0.5" />
+    </Effect>
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="0,0,1,1" origin="0.5,0.5" />
+  </Affliction>
+
+  <Affliction identifier="disablerslow" type="debuff" limbspecific="false" iconcolors="0,50,150;0,50,200;0,50,255" indicatorlimb="Torso" showinhealthscannerthreshold="1" showiconthreshold="1"
+    maxstrength="90" HealableInMedicalClinic="false">
+    <Effect minstrength="0" maxstrength="90" strengthchange="-1"
+      minspeedmultiplier="1" maxspeedmultiplier="0.05" />
+    <icon texture="%moddir%/Sprites/afflictionicons.png" sourcerect="128,384,128,128" origin="0.5,0.5" />
+  </Affliction>
+
+    <Affliction
+    identifier="precodegreen"
+    nameidentifier="precodegreen"
+    type="talentbuff"
+    isbuff="true"
+    limbspecific="false"
+    maxstrength="1"
+    showiconthreshold="1000"
+    treatmentthreshold="1000"
+    showicontoothersthreshold="1000"
+    showinhealthscannerthreshold="1000"
+    iconcolors="0,0,0">
+    <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,3" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+
+    <Affliction
+    identifier="precodeblue"
+    nameidentifier="precodeblue"
+    type="talentbuff"
+    isbuff="true"
+    limbspecific="false"
+    maxstrength="1"
+    showiconthreshold="1000"
+    treatmentthreshold="1000"
+    showicontoothersthreshold="1000"
+    showinhealthscannerthreshold="1000"
+    iconcolors="0,0,0">
+    <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,3" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+
+    <Affliction
+    identifier="precodered"
+    nameidentifier="precodered"
+    type="talentbuff"
+    isbuff="true"
+    limbspecific="false"
+    maxstrength="1"
+    showiconthreshold="1000"
+    treatmentthreshold="1000"
+    showicontoothersthreshold="1000"
+    showinhealthscannerthreshold="1000"
+    iconcolors="0,0,0">
+    <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,3" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+
+</Afflictions>

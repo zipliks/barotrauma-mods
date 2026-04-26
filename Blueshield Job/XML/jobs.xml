@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Jobs>
+  <Job identifier="blueshield" maxnumber="1" minkarma="90" initialcount="1" uicolor="0.5,0.86,0.9" vitalitymodifier="0" pricemultiplier="1.3" idlebehavior="Active">
+    <Jobicon>
+      <sprite texture="%moddir%/Sprites/spritesheet.png" sourcerect="896,0,128,128" origin="0.5,0.5" />
+    </Jobicon>
+    <JobiconSmall>
+      <sprite texture="%moddir%/Sprites/spritesheet.png" sourcerect="896,0,128,128" origin="0.5,0.5" />
+    </JobiconSmall>
+    <Skills>
+      <Skill identifier="medical" level="25,30" />
+      <Skill identifier="weapons" level="20,25" primary="true" />
+      <Skill identifier="helm" level="5,10" />
+      <Skill identifier="mechanical" level="5,10" />
+      <Skill identifier="electrical" level="5,10" />
+    </Skills>
+    <ItemSet>
+      <Item identifier="idcard" equip="true" showpreview="false" />
+      <Item identifier="blueshieldoutfit" equip="true" outfit="true" />
+      <Item identifier="stunbaton" showpreview="true">
+        <Item identifier="batterycell" showpreview="false" />
+      </Item>
+      <Item identifier="headset" equip="true" showpreview="false" />
+    </ItemSet>
+    <ItemSet>
+      <Item identifier="idcard" equip="true" showpreview="false" />
+      <Item identifier="blueshieldoutfit" equip="true" outfit="true" />
+      <Item identifier="revolver" equip="false">
+        <Item identifier="revolverround" />
+        <Item identifier="revolverround" />
+        <Item identifier="revolverround" />
+        <Item identifier="revolverround" />
+        <Item identifier="revolverround" />
+        <Item identifier="revolverround" />
+      </Item>
+      <Item identifier="headset" equip="true" showpreview="false" />
+    </ItemSet>
+    <AutonomousObjectives>
+      <Order identifier="rescue" prioritymodifier="1" />
+      <Order identifier="extinguishfires" prioritymodifier="0.5" />
+    </AutonomousObjectives>
+    <AppropriateOrders>
+      <Order identifier="rescue" />
+      <Order identifier="requestfirstaid" />
+    </AppropriateOrders>
+  </Job>
+</Jobs>

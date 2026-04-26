@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Low TTK" modversion="1.0.1" corepackage="False" steamworkshopid="2952982537" gameversion="1.0.8.0">
+  <Character file="%ModDir%/Human.xml" />
+</contentpackage>
